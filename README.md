@@ -1,10 +1,5 @@
-# naiveproxy docker
-naiveproxy 绑定 caddy，naiveproxy-docker 将两者构建在了一起
-
-caddy path: /app/caddy
-
-Caddyfile path: /app/Caddyfile
-
+# Naiveproxy Docker
+目标：纯净的系统，不希望被干扰，所有一切都在 docker 中，随时移除，随时 RUN。
 # 快速上手
 
 必须将域名绑定好服务器，例如域名 www.example.com
@@ -65,6 +60,15 @@ ENV EMAIL=""      Caddy自动申请域名时候使用的申请邮箱
 
 除了 DOMAIN 是必填，其余参数都可以省略，会随机生成
 ```
+
+# 开发者
+naiveproxy 绑定 caddy，naiveproxy-docker 将两者构建在了一起
+
+caddy path: /app/caddy
+
+Caddyfile path: /app/Caddyfile
+
+certificate(Path Caddyfile): /app
 # 客户端配置
 naiveproxy 的客户端比较少，如果是苹果生态则无影响，小火箭很好用
 
