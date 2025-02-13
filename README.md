@@ -47,10 +47,11 @@ docker run -d --restart=always \
 ```
 
 # 查看用户名和密码
-如果你启动时候配置了 USER 和 PASSWORD 就没必要查看了，直接使用即可
 ```
 docker exec -it naiveproxy sh -c "cat /app/info.txt"
 ```
+
+如果启动时候配置了 USER 和 PASSWORD 直接使用即可
 
 # 完全移除
 所有的数据都在容器内，宿主机不挂载，保证绝对干净：
