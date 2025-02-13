@@ -11,7 +11,7 @@ Caddyfile path: /app/Caddyfile
 
 由于自动签发证书，必须使用宿主机 443 和 80 端口，否则要DNS（配置繁琐），必须使用主机 443 端口，80 选配。
 
-注意，启动后需要等待大约半分钟（申请证书），才会生效：（访问https://domain，如果完成会显示 hello world 字符串）
+注意，启动后需要等待大约半分钟（申请证书），才会生效：（如果完成 https://domain 会显示 hello world 字符串）
 
 复制下面的命令，替换域名后直接执行即可
 
@@ -65,3 +65,11 @@ ENV EMAIL=""      Caddy自动申请域名时候使用的申请邮箱
 
 除了 DOMAIN 是必填，其余参数都可以省略，会随机生成
 ```
+# 客户端配置
+naiveproxy 的客户端比较少，如果是苹果生态则无影响，小火箭很好用
+
+IOS 和 MAC 使用 Shadowrocket，选择 HTTP2，配置 Address（域名），配置 Port（443），配置 User（USER），配置 Password（Password）。
+
+Android nekibox（需要下载插件）
+
+Windows：V2rayN
