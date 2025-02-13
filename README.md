@@ -28,10 +28,7 @@ docker run -d --restart=always \
 
 只使用443端口，只配置域名，其余自动生成（小白推荐）：
 ```
-docker run -d --restart=always \
-    -p 443:443 \
-    -e DOMAIN="请替换域名：www.example.com" \
-    --name naiveproxy kevinstarry/naiveproxy
+docker run -d --restart=always -p 443:443 -e DOMAIN="请替换域名：www.example.com" --name naiveproxy kevinstarry/naiveproxy
 ```
 
 
