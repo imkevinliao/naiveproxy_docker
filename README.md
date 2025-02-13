@@ -68,7 +68,7 @@ ENV EMAIL=""      Caddy自动申请域名时候使用的申请邮箱
 # 客户端配置
 naiveproxy 的客户端比较少，如果是苹果生态则无影响，小火箭很好用
 
-IOS 和 MAC 使用 Shadowrocket，选择 HTTP2，配置 Address（域名），配置 Port（443），配置 User（USER），配置 Password（Password）。
+IOS 和 MAC 使用 Shadowrocket，选择 HTTP2，配置 Address（域名），配置 Port（443），配置 User（USER），配置 Password（PASSWORD）
 
 Android nekibox（需要下载插件）
 
