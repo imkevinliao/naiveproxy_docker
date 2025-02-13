@@ -15,7 +15,7 @@ Caddyfile path: /app/Caddyfile
 
 复制下面的命令，替换域名后直接执行即可
 
-方式一ç
+方式一(只使用443端口）
 ```
 docker run -d --restart=always \
     -p 443:443 \
