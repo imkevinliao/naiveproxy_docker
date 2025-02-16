@@ -10,24 +10,11 @@
 
 复制下面的命令，替换域名后直接执行即可
 
-方式一(只使用443端口）
 ```
-docker run -d --restart=always \
-    -p 443:443 \
-    -e DOMAIN="请替换域名：www.example.com" \
-    -e USER="" \
-    -e PASSWORD="" \
-    -e EMAIL="" \
-    --name naiveproxy kevinstarry/naiveproxy
-```
-
-只使用443端口，只配置域名，其余自动生成（小白推荐）：
-```
-docker run -d --restart=always -p 443:443 -e DOMAIN="请替换域名：www.example.com" --name naiveproxy kevinstarry/naiveproxy
+docker run -d --restart=always -p 80:80 -p 443:443 -e DOMAIN="请替换域名：www.example.com" --name naiveproxy kevinstarry/naiveproxy
 ```
 
 
-方式二（使用80和443端口）：
 ```
 docker run -d --restart=always \
     -p 80:80 -p 443:443 \
